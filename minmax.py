@@ -18,7 +18,7 @@ def minmax(game, depth, alpha, beta, maximizing_player, player):
 	score = game.is_finished()
 	if not score == None:
 		states += 1
-		return score
+		return -score
 	if depth == 0:
 		return 0
 	if maximizing_player:
